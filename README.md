@@ -43,11 +43,6 @@ Calculate essential health metrics:
   - Activity level
   - Weight goals (lose, maintain, gain)
 
-## 🚀 Demo
-
-![Diet Planner Demo](screenshot-placeholder.png)
-*Personalized meal recommendations with health condition filtering*
-
 ## 💻 Technologies Used
 
 - **Frontend**: HTML5, CSS3, Vanilla JavaScript
@@ -73,28 +68,6 @@ health-nutrition-website/
 │   └── favicon.ico           # Site favicon
 └── README.md
 ```
-
-## 🛠️ Installation & Setup
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/health-nutrition-website.git
-   ```
-
-2. **Navigate to the project directory**
-   ```bash
-   cd health-nutrition-website
-   ```
-
-3. **Open in browser**
-   ```bash
-   # Simply open index.html in your browser
-   # Or use a local server (recommended)
-   python -m http.server 8000
-   # Then visit http://localhost:8000
-   ```
-
-4. **That's it!** No dependencies, no build process needed.
 
 ## 🎯 Usage
 
