@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriPath</title>
+    <link rel="stylesheet" href="Calc.css">
+    <link rel="icon" type="image/png" href="../images/balanced-diet.png">
+</head>
+<body>
+    <div class="page-container">
+        <h1 class="page-title">Calculate Your BMI & Calories</h1>
+        <p class="page-subtitle">Enter your information to get personalized health insights</p>
+
+        <!-- Calculator Container -->
+        <div class="calculator-container">
+            <h2 class="section-title">Your Information</h2>
+            
+            <div class="form-group">
+                <label for="weight">Weight (Kg)</label>
+                <input id="weight" type="text" placeholder="e.g., 70">
+            </div>
+
+            <div class="form-group">
+                <label for="height">Height (m)</label>
+                <input id="height" type="text" placeholder="e.g., 1.75">
+            </div>
+
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" value="male" name="gender" id="male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" value="female" name="gender" id="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="activity">Physical Activity</label>
+                <select name="activity" id="activity">
+                    <option value="low">Low</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+
+            <button class="btn-calculate" onclick="CalorieCalculation()">Calculate</button>
+        </div>
+
+        <!-- Results Container -->
+        <div class="results-container" id="resultsContainer">
+            <h2 class="results-title">Your Results</h2>
+            <div id="output"></div>
+            <button class="btn-calculate" onclick="window.location.href = '../diet-plan/index.html'">Make Your Own Diet Plan!</button>
+        </div>
+    </div>
+        
+    <script src="script.js"></script>
+</body>
+</html>

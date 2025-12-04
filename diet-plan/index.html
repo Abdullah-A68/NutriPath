@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriPath</title>
+    <link rel="icon" type="image/png" href="../images/balanced-diet.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="title">
+        <h1>Healthy Diet Planner</h1>
+    </div>
+
+    <p>Personalized meal recommendations based on your health conditions</p>
+
+    <div class="health-condition-dropdown">
+        <button class="filter-toggle">Filter by Health Conditions <span class="toggle-icon">▼</span></button>
+        <div class="health-conditions-checklist">
+            <p class="checklist-label">Select your health conditions:</p>
+            <div class="condition-item">
+                <input type="checkbox" id="diabetes" value="diabetes">
+                <label for="diabetes">Diabetes</label>
+            </div>
+            <div class="condition-item">
+                <input type="checkbox" id="hypertension" value="hypertension">
+                <label for="hypertension">Hypertension (High Blood Pressure)</label>
+            </div>
+            <div class="condition-item">
+                <input type="checkbox" id="heart-disease" value="heart-disease">
+                <label for="heart-disease">Heart Disease</label>
+            </div>
+            <div class="condition-item">
+                <input type="checkbox" id="kidney-disease" value="kidney-disease">
+                <label for="kidney-disease">Kidney Disease</label>
+            </div>
+            <div class="condition-item">
+                <input type="checkbox" id="lactose-intolerance" value="lactose-intolerance">
+                <label for="lactose-intolerance">Lactose Intolerance</label>
+            </div>
+            <div class="condition-item">
+                <input type="checkbox" id="celiac-disease" value="celiac-disease">
+                <label for="celiac-disease">Celiac Disease (Gluten Intolerance)</label>
+            </div>
+            <div class="condition-item">
+                <input type="checkbox" id="high-cholesterol" value="high-cholesterol">
+                <label for="high-cholesterol">High Cholesterol</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="filter-buttons-container">
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="breakfast">Breakfast</button>
+        <button class="filter-btn" data-filter="lunch">Lunch</button>
+        <button class="filter-btn" data-filter="dinner">Dinner</button>
+        <button class="filter-btn" data-filter="snack">Snack</button>
+    </div>
+
+    <div class="meal-cards-container">
+    </div>
+    <div class="modal-pop-up">
+    </div>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot-widget">
+        <button class="chat-toggle" id="chat-toggle">
+            <span class="chat-icon">💬</span>
+        </button>
+        <div class="chat-container" id="chat-container">
+            <div class="chat-header">
+                <h3>Nutrition Assistant</h3>
+                <button class="chat-close" id="chat-close">×</button>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="chat-message bot">
+                    <p>Hello! 👋 How can I help you with your meal planning today?</p>
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" class="chat-input" placeholder="Type your message...">
+                <button class="chat-send" id="chat-send">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
