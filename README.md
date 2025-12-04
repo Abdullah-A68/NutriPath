@@ -165,10 +165,6 @@ Contributions are welcome! Here's how you can help:
 - Add print-friendly recipe format
 - Create meal prep guides
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 👨‍💻 Author
 
 **Your Name**
